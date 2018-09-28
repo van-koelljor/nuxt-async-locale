@@ -1,7 +1,6 @@
 <template>
     <div class="locales">
-      <p>locale-dummy1</p>
-      <p>locale-dummy2</p>
+      <p>{{ $t('welcome') }}</p>
     </div>
 </template>
 
@@ -12,7 +11,7 @@ export default {
 
 <style>
 .locales > p{
-  padding-top: 15px;
+  padding-top: 150px;
   align-items: center;
   text-align: center;
 }

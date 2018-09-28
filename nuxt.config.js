@@ -39,7 +39,23 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
+    ['nuxt-i18n', {
+      seo: false,
+      locales: ['en', 'fr'],
+      strategy: 'prefix',
+      defaultLocale: 'en',
+      vueI18n: {
+        fallbackLocale: 'en',
+        messages: {
+          en: {
+            welcome: 'Hello'
+          },
+          fr: {
+            welcome: 'Bonjour'
+          },
+        }
+      }
+    }],
     '@nuxtjs/axios'
   ],
   /*
@@ -57,7 +73,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+      'axios'
     }
   }
 }
