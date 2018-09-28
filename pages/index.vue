@@ -1,7 +1,17 @@
 <template>
-    <div class="locales">
+  <div class="container">
+    <div class="salutation">
       <p>{{ $t('welcome') }}, {{ $t('dearCustomer') }}!</p>
     </div>
+    <div class="links">
+      <nuxt-link
+        v-for="locale in $i18n.locales"
+        v-if="locale.code !== $i18n.locale"
+        :key="locale.code"
+        :to="switchLocalePath(locale.code)">{{ locale.name }}
+      </nuxt-link>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -24,9 +34,13 @@ export default {
 </script>
 
 <style>
-.locales > p{
+.container {
   padding-top: 150px;
   align-items: center;
   text-align: center;
+}
+
+.container > .links {
+  padding-top: 30px;
 }
 </style>
