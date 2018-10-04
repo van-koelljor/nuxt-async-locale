@@ -16,7 +16,6 @@ module.exports = {
   },
 
   loading: { color: '#fff' },
-
   modules: [
     ['nuxt-i18n', {
       seo: false,
@@ -29,7 +28,6 @@ module.exports = {
           code: 'fr',
           name: 'Français'
         }],
-      strategy: 'prefix',
       defaultLocale: 'en',
       vueI18n: {
         fallbackLocale: 'en',
