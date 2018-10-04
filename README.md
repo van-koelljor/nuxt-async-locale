@@ -1,6 +1,6 @@
 # nuxt-async-locale
 
-> My groovy Nuxt.js project
+> Repository for demonstrating a unwanted behaviour of nuxt-i18n async locale loading
 
 ## Build Setup
 
