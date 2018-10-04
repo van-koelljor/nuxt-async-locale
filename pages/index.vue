@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="salutation">
-      <p>{{ $t('welcome') }}, {{ $t('dearCustomer') }}!</p>
+      <p>{{ $t('welcome') }}, {{ $t('dearCustomerTranslationKey') }}!</p>
     </div>
     <div class="links">
       <nuxt-link
